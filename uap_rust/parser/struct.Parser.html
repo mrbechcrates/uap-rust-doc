@@ -46,21 +46,12 @@
             <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                 [<span class='inner'>&#x2212;</span>]
             </a>
-        </span><a id='src-17' class='srclink' href='../../src/uap_rust/parser.rs.html#25-29' title='goto source code'>[src]</a></span></h1>
+        </span><a id='src-17' class='srclink' href='../../src/uap_rust/parser.rs.html#14-18' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Parser {
     pub ua_regex: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../uap_rust/ua/struct.UserAgentParser.html' title='uap_rust::ua::UserAgentParser'>UserAgentParser</a>&gt;,
     pub devices_regex: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../uap_rust/device/struct.DeviceParser.html' title='uap_rust::device::DeviceParser'>DeviceParser</a>&gt;,
     pub os_regex: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../uap_rust/os/struct.OSParser.html' title='uap_rust::os::OSParser'>OSParser</a>&gt;,
 }</pre><div class='docblock'><p>The <code>Parser</code> type, used for parsing user agent strings into <code>Client</code> structs.</p>
-
-<p>Example usage:</p>
-<pre class='rust rust-example-rendered'>
-<span class='kw'>let</span> <span class='ident'>agent</span> <span class='op'>=</span> <span class='string'>&quot;Mozilla/5.0 (iPhone; CPU iPhone OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3&quot;</span>.<span class='ident'>to_string</span>();
-<span class='kw'>let</span> <span class='ident'>p</span> <span class='op'>=</span> <span class='ident'>parser</span>::<span class='ident'>Parser</span>::<span class='ident'>new</span>().<span class='ident'>unwrap</span>();
-<span class='kw'>let</span> <span class='ident'>c</span> <span class='op'>=</span> <span class='ident'>p</span>.<span class='ident'>parse</span>(<span class='ident'>agent</span>);
-
-<span class='macro'>println</span><span class='macro'>!</span>(<span class='string'>&quot;{:?}&quot;</span>,<span class='ident'>c</span>);
- <span class='comment'>//Output: Client { user_agent: UserAgent { family: &quot;Mobile Safari&quot;, major: Some(&quot;5&quot;), minor: Some(&quot;1&quot;), patch: None }, os: OS { family: &quot;iOS&quot;, major: Some(&quot;5&quot;), minor: Some(&quot;1&quot;), patch: Some(&quot;1&quot;), patch_minor: None }, device: Device { family: &quot;iPhone&quot;, brand: Some(&quot;Apple&quot;), model: Some(&quot;iPhone&quot;) } }</span></pre>
 </div><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
                                   <td id='structfield.ua_regex'><code>ua_regex</code></td><td></td></tr><tr class='stab '>

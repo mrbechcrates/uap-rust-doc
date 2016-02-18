@@ -104,6 +104,7 @@
 <span id="61">61</span>
 <span id="62">62</span>
 <span id="63">63</span>
+<span id="64">64</span>
 </pre><pre class='rust '>
 <span class='doccomment'>/*!
 #ua-parser for rust
@@ -113,8 +114,9 @@ This is a user agent parser for Rust based on
 ##Usage example
 
 ```rust
+use uap_rust::parser::Parser;
 let agent = &quot;Mozilla/5.0 (iPhone; CPU iPhone OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3&quot;.to_string();
-let p = parser::Parser::new().unwrap();
+let p = Parser::new().unwrap();
 let c = p.parse(agent);
 
 println!(&quot;{:?}&quot;,c);

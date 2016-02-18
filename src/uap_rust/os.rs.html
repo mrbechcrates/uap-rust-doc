@@ -107,26 +107,12 @@
 <span id="64">64</span>
 <span id="65">65</span>
 <span id="66">66</span>
-<span id="67">67</span>
-<span id="68">68</span>
-<span id="69">69</span>
-<span id="70">70</span>
-<span id="71">71</span>
-<span id="72">72</span>
-<span id="73">73</span>
 </pre><pre class='rust '>
 <span class='kw'>use</span> <span class='ident'>yaml_rust</span>::{<span class='ident'>Yaml</span>};
 <span class='kw'>use</span> <span class='ident'>yaml</span>;
 <span class='kw'>use</span> <span class='ident'>regex</span>::<span class='ident'>Regex</span>;
 
 <span class='doccomment'>///`OS` contains the operating system information from the user agent.</span>
-<span class='doccomment'>///</span>
-<span class='doccomment'>///Example:</span>
-<span class='doccomment'>///</span>
-<span class='doccomment'>///```</span>
-<span class='doccomment'>///&quot;Mozilla/5.0 (iPhone; CPU iPhone OS 5_1_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B206 Safari/7534.48.3&quot;</span>
-<span class='doccomment'>///OS { family: &quot;iOS&quot;, major: Some(&quot;5&quot;), minor: Some(&quot;1&quot;), patch: Some(&quot;1&quot;), patch_minor: None }</span>
-<span class='doccomment'>///```</span>
 <span class='attribute'>#[<span class='ident'>derive</span>(<span class='ident'>Debug</span>, <span class='ident'>PartialEq</span>, <span class='ident'>Eq</span>)]</span>
 <span class='kw'>pub</span> <span class='kw'>struct</span> <span class='ident'>OS</span> {
     <span class='kw'>pub</span> <span class='ident'>family</span>: <span class='ident'>String</span>,
