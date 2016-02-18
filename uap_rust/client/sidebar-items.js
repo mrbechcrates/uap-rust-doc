@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Client","`Client` struct, contains the parsed user agent information."]]});

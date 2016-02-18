@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["OS","`OS` contains the operating system information from the user agent."],["OSParser",""]]});

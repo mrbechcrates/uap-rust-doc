@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Device","`Device` contains the device information from the user agent."],["DeviceParser",""]]});
